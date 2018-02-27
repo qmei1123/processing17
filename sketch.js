@@ -1,7 +1,7 @@
 var upLine = []; // array of Jitter objects
 
 function setup() {
-  createCanvas(1275, 680);
+createCanvas(window.innerWidth, window.innerHeight);
   // Create objects
   for (var i=0; i<50; i++) {
     upLine.push(new movement());
@@ -33,11 +33,5 @@ function movement() {
     stroke(15, 15, 70);
     line(this.x, this.y, this.x, this.yTwo);
   };
-}
-
-function bar() {
-    this.display = function() {
-        rect()
-    }
 }
 
